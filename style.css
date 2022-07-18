@@ -1,0 +1,234 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+}
+.a {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: 300px 455px;
+}
+.b {
+  width: 300px;
+  height: 455px;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: -50px;
+  left: 112.24px;
+}
+/* PRICE */
+
+.price {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Fraunces", serif;
+}
+.sale {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  margin: 0%;
+}
+.original {
+  text-decoration: line-through;
+  margin: 0%;
+}
+
+/*Text*/
+.perfume {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  letter-spacing: 10px;
+  margin-top: 30px;
+}
+.head {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.description {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 250px;
+  height: 40px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(158, 70%, 62%);
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+  }
+  .a {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: 300px 455px;
+  }
+  .b {
+    width: 300px;
+    height: 455px;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: -50px;
+    left: 112.24px;
+  }
+  /* PRICE */
+
+  .price {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Fraunces", serif;
+  }
+  .sale {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin: 0%;
+  }
+  .original {
+    text-decoration: line-through;
+    margin: 0%;
+  }
+
+  /*Text*/
+  .perfume {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 10px;
+    margin-top: 30px;
+  }
+  .head {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .description {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    height: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(158, 70%, 62%);
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 400px) and (max-height:700px) {
+   
+  .body {
+    width: 300px;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+  }
+  .a {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: 300px 200px;
+  }
+  .b {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+  }
+  .attribution{
+    margin: 0px;
+    width: fit-content;
+    bottom:-150px;
+    left: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /* Text */
+.perfume{
+    text-align: center;
+    margin: 0;
+    margin-top:10px;
+    font-size: 12px;
+}
+.head{
+    font-size: 25px;
+    text-align: center;
+}
+.description{
+    font-size: 13px;
+    text-align: center;
+}
+/* Price */
+.price{
+    flex-direction: column;
+}
+/* button */
+button{
+    width: 200px;
+}
+}
